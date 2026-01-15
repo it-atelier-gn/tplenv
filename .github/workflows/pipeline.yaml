@@ -119,17 +119,6 @@ jobs:
           cd release
           sha256sum * > SHA256SUMS
 
-      - name: Generate SBOM (CycloneDX)
-        uses: anchore/sbom-action@v0
-        with:
-          format: cyclonedx-json
-          output-file: release/sbom.json
-
-      - name: Generate SLSA Provenance
-        uses: slsa-framework/slsa-github-generator/.github/actions/generator@v2.1.0
-        with:
-          base64-subjects: "$(sha256sum release/* | base64 -w0)"
-
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
