@@ -101,7 +101,7 @@ jobs:
       - name: Prepare release files
         run: |
           mkdir -p release
-          cp getsec-linux-amd64/tplenv release/getsec-${{ steps.version.outputs.version }}-linux-amd64
+          cp getsec-linux-amd64/getsec release/getsec-${{ steps.version.outputs.version }}-linux-amd64
           cp getsec-windows-amd64/getsec.exe release/getsec-${{ steps.version.outputs.version }}-windows-amd64.exe
           cp tplenv-linux-amd64/tplenv release/tplenv-${{ steps.version.outputs.version }}-linux-amd64
           cp tplenv-windows-amd64/tplenv.exe release/tplenv-${{ steps.version.outputs.version }}-windows-amd64.exe
