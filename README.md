@@ -1,8 +1,6 @@
 # 🔐 DesktopSecrets
 
-> 🚀 A powerful system for the seamless retrieval of secrets on your development machine. DesktopSecrets conveniently provides access to secrets for your locally running software.
-
-DesktopSecrets will automatically start when one of the clients is used for the first time. A tray icon allows you to easily control the system.
+DesktopSecrets is a lightweight, secure utility that centralizes secret management for developers and power users on the desktop. It integrates with KeePass and local user-provided secrets to make retrieving credentials simple, scriptable, and safe, while minimizing repeated password prompts through configurable caching. Designed for workflows that require environment templating and command-line automation, DesktopSecrets helps you keep sensitive data out of source files and streamline local development and deployment tasks.
 
 ## ✨ Features
 
